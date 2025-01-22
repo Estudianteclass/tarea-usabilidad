@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* Problema: No se define un esquema de colores claro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfcfff;
+    /* Problema: Uso de un color que puede ser demasiado claro */
+    ;
+    /* Problema: Contraste insuficiente con el fondo */
+    margin: 0;
+}
+
+header {
+    background-color: #ff9900;
+    /* Problema: Falta de contraste con el texto */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 0%;
+}
+
+nav {
+    
+    height: 50px;
+    background-color: #002db3;
+    width: 100%;
+
+}
+
+nav ul {
+overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+align-content: center;
+}
+
+nav li {
+    font-weight: bold;
+    display: block;
+    padding: 15px 30px;
+}
+nav li:hover{
+    background-color: #003bee;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    /* Problema: Color sin consideración de accesibilidad */
+}
+
+main section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Problema: Uso de bordes poco visibles */
+}
+
+form label {
+    place-self: start;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    /* Problema: Aplicado sin considerar el contexto */
+    margin-bottom: 10px;
+    align-self: start;
+    border-radius: 5%;
+    border: none;
+}
+
+form input {
+    height: 30px;
+}
+
+form {
+    margin-left: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+
+    text-align: center;
+}
+
+#contFormulario {
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px;
+    border-radius: 1%;
+
+}
+
+#bloqueFormulario h2 {
+
+    text-align: center;
+}
+
+button {
+    background-color: #002db3;
+    /* Problema: Color de botón que no resalta suficientemente */
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100px;
+    place-self: center;
+    border-radius: 5%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0%;
+    width: 100%;
+    background-color: #002db3;
+    /* Problema: Color similar al texto del pie de página */
+    font-size: 0.8em;
+    color: white;
+}
+
+#foto1 {
+
+    width: 300px;
+    border-radius: 5%;
+}
+
+#servicios {
+    border: none;
+    background-color: #ff9900;
+}
