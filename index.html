@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Usability Test Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +22,11 @@
         <!-- Problema: Enlace genérico sin contexto adecuado -->
         <a href="index.html">Click aquí</a>
         <!-- Problema: El título no es claro sobre el propósito del sitio -->
-        <h1>Bienvenido a Todo PC</h1>
+        <div id="titulo">
+            <img src="imagenes/icono.png" alt="icono de la web" id="logo">
+            <h1 id="textoTitulo">Bienvenido a Macrosoft</h1>
+        </div>
+
     </header>
 
     <nav>
@@ -60,7 +73,7 @@
         </section>
 
         <!-- Problema: Contenido confuso y no estructurado -->
-        <section>
+        <section id="info">
             <h2>Información importante</h2>
             <p>123456789</p>
             <p>"Lorem ipsum"</p>

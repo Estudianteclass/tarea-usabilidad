@@ -3,26 +3,42 @@
 /* Problema: No se define un esquema de colores claro */
 body {
     font-family: Arial, sans-serif;
-    background-color: #bfcfff;
+    background-color: #1F7A8C;
     /* Problema: Uso de un color que puede ser demasiado claro */
     ;
     /* Problema: Contraste insuficiente con el fondo */
     margin: 0;
+    width: 100%;
 }
-
+/*<a target="_blank" href="https://icons8.com/icon/cax8IlwRNvD0/shuffle">Shuffle</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>*/
 header {
-    background-color: #ff9900;
+    background-color: #DB222A;
     /* Problema: Falta de contraste con el texto */
     padding: 10px;
-    text-align: center;
+  
     width: 100%;
     margin-top: 0%;
+    color: white;
 }
+#titulo{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+#logo{
 
+    margin-right: 5px;
+}
+#textoTitulo{
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 nav {
     
     height: 50px;
-    background-color: #002db3;
+    background-color: #053C5E;
     width: 100%;
 
 }
@@ -39,12 +55,14 @@ align-content: center;
 }
 
 nav li {
-    font-weight: bold;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
     display: block;
     padding: 15px 30px;
 }
 nav li:hover{
-    background-color: #003bee;
+    background-color: #032941;
 }
 nav a {
     text-decoration: none;
@@ -55,13 +73,18 @@ nav a {
 main section {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 2px groove #053C5E;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
     /* Problema: Uso de bordes poco visibles */
 }
 
 form label {
+    
     place-self: start;
     margin-bottom: 5px;
+    color: #010f18;
 }
 
 form input,
@@ -70,8 +93,9 @@ form textarea {
     /* Problema: Aplicado sin considerar el contexto */
     margin-bottom: 10px;
     align-self: start;
-    border-radius: 5%;
-    border: none;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 1px;
 }
 
 form input {
@@ -89,42 +113,49 @@ form {
 form label {
 
     text-align: center;
+    font-weight: bold;
 }
 
 #contFormulario {
     justify-self: center;
     display: flex;
     flex-direction: row;
-    background-color: white;
-    padding: 10px;
-    border-radius: 1%;
+    background-color: #BFDBF7;
+    padding: 15px;
+    border-radius: 10px;
 
 }
 
 #bloqueFormulario h2 {
-
+color: white;
     text-align: center;
 }
-
+/*https://coolors.co/a31621-bfdbf7-053c5e-1f7a8c-db222a*/
 button {
-    background-color: #002db3;
+    background-color: #053C5E;
     /* Problema: Color de botón que no resalta suficientemente */
     color: white;
     border: none;
-    font-weight: bold;
+
     padding: 10px 15px;
     cursor: pointer;
     width: 100px;
     place-self: center;
-    border-radius: 5%;
+    border-radius: 5px;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+button:hover{
 
+    background-color: #02253a;
+}
 footer {
     text-align: center;
     padding: 10px;
     margin-bottom: 0%;
     width: 100%;
-    background-color: #002db3;
+    background-color: #053C5E;
     /* Problema: Color similar al texto del pie de página */
     font-size: 0.8em;
     color: white;
@@ -133,10 +164,16 @@ footer {
 #foto1 {
 
     width: 300px;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 #servicios {
     border: none;
-    background-color: #ff9900;
+    background-color: #A31621;
+    color: white;
+}
+
+#info{
+color: white;
+    background-color: #A31621;
 }
