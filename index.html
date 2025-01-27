@@ -20,11 +20,12 @@
 <body>
     <header>
         <!-- Problema: Enlace genérico sin contexto adecuado -->
-        <a href="index.html">Click aquí</a>
+        <a href="index.html" id="enlaceHeader">Acceder a tu perfil de usuario</a>
         <!-- Problema: El título no es claro sobre el propósito del sitio -->
         <div id="titulo">
             <img src="imagenes/icono.png" alt="icono de la web" id="logo">
-            <h1 id="textoTitulo">Bienvenido a Macrosoft</h1>
+            <h1 id="textoTitulo">Bienvenido a Todo PC</h1>
+           
         </div>
 
     </header>
@@ -52,18 +53,18 @@
             <h2>Contáctanos</h2>
             <div id="contFormulario">
                 <img src="imagenes/foto1.jpg" alt="foto de un ordenador" id="foto1">
-                <form>
+                <form id="formulario">
                     <label for="name">Nombre:</label>
                     <!-- Problema: Falta de tamaño adecuado para el campo -->
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Correo electrónico:</label>
                     <!-- Problema: No hay validación de tipo de correo electrónico -->
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Mensaje:</label>
                     <!-- Problema: Área de texto demasiado pequeña -->
-                    <textarea id="message" name="message" rows="5" cols="25"></textarea>
+                    <textarea id="message" name="message" rows="5" cols="25" required></textarea>
 
                     <!-- Problema: Botón con texto ambiguo -->
                     <button type="submit">Enviar</button>
@@ -74,10 +75,13 @@
 
         <!-- Problema: Contenido confuso y no estructurado -->
         <section id="info">
-            <h2>Información importante</h2>
-            <p>123456789</p>
-            <p>"Lorem ipsum"</p>
+            <div>
+                 <h2>Donde encontrarnos</h2>
+            <p>Direccion: Calle perez pulido Nº10</p>
+            <p>Codigo Postal: 38760</p>
             <a href="https://example.com">https://example.com</a>
+            </div>
+           <img src="imagenes/calle.jpg" alt="foto del local de la empresa" id="fotoLocal">
         </section>
     </main>
 
